@@ -70,7 +70,7 @@ graph TD
    - `Prompt`: [生成好的 Character Sheet 英文 Prompt]
    - `ImageName`: `character_sheet_[角色英文名]` (例如 `character_sheet_newton`)
 2. **複製寫入儲存庫**：生圖完成後，AI 代理會主動執行 shell 複製指令，將設定圖從系統快取移動至您的專案目錄：
-   - 目的路徑：`/Users/shane/Library/Mobile Documents/iCloud~md~obsidian/Documents/AI 漫畫生成器/Images/`
+    - 目的路徑：`[環境設定專案資料夾]/Working/Images/`
 3. **Obsidian 顯示**：在您的「角色聖經（Character Bible）」筆記中，使用 `![[Images/character_sheet_newton.png]]` 來嵌入該角色三視圖。
 
 ---

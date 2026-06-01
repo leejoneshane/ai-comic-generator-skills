@@ -55,7 +55,7 @@ description: 漫畫頁面渲染引擎 (Page Renderer)，負責將腳本分鏡與
    - `Prompt`: [生成好的英文 Prompt]
    - `ImageName`: `comic_page_[頁碼]` (例如 `comic_page_3`)
 3. **複製寫入儲存庫**：生圖完成後，AI 代理會主動運行 shell 複製指令，將產出的圖片從系統快取移動至您的專案目錄：
-   - 目的路徑：`/Users/shane/Library/Mobile Documents/iCloud~md~obsidian/Documents/AI 漫畫生成器/Images/`
+    - 目的路徑：`[環境設定專案資料夾]/Working/Images/`
 4. **Obsidian 渲染顯示**：在您的專案筆記中，自動使用 `![[Images/comic_page_3.png]]` 來嵌入並呈現該頁面圖片，讓您能直接在 Obsidian 筆記中手動編輯與瀏覽完整漫畫！
 
 ---
