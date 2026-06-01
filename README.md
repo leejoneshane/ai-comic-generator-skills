@@ -11,6 +11,19 @@
 
 ---
 
+## 💾 安裝與全域部署 (Installation & Deployment)
+
+本專案已完全封裝為符合全域 Agent 技能生態標準的模組化套件。任何人均可透過全域 `npx` 封裝包管理器，在終端機中一鍵將此 AI 漫畫生成器技能部署至您的智能代理（如 Antigravity 或 Claude Code）大腦中：
+
+```bash
+# 全域一鍵下載、編譯並安裝此漫畫生成技能
+npx skills add leejoneshane/ai-comic-generator-skills
+```
+
+安裝完成後，AI 代理會自動加載此技能（位於全域 `~/.agents/skills/ai-comic-generator/` 下），並在日常開發協同中隨時調用！
+
+---
+
 ## 🧠 第一部分：系統設計概覽 (System Architecture)
 
 本系統以「AI 漫畫 IDE（整合開發環境）」為設計理念，透過分離「腳本／邏輯模型」與「生圖模型」，讓各個專業子引擎在不同階段發揮極致效能，並依賴結構化的永久記憶（Persistent Memory）確保一致性。
