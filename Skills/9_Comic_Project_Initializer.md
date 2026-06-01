@@ -47,8 +47,9 @@ graph TD
 # 漫畫專案安全重設與初始化腳本
 echo "=== 開始進行漫畫專案工作區初始化重設 ==="
 
-SCRIPT_DIR="/Users/shane/ai-comic-generator-skills/Scripts"
-CONFIG_FILE="/Users/shane/ai-comic-generator-skills/config.json"
+# 自動定位目前腳本所在目錄與設定檔
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONFIG_FILE="$SCRIPT_DIR/../config.json"
 
 # 1. 讀取專案根目錄
 VAULT_ROOT=$(python3 -c "import json; print(json.load(open('$CONFIG_FILE'))['manga_projects_root'])")

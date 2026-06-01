@@ -2,7 +2,8 @@ import os
 import json
 import sys
 
-CONFIG_PATH = ".agent/ai-comic-generator-skills/config.json"
+# 自動定位設定檔：儲存於目前檔案 (Scripts/config_manager.py) 所在目錄的上一層目錄 (即 skill 專案根目錄下)
+CONFIG_PATH = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config.json"))
 
 def load_or_create_config():
     if os.path.exists(CONFIG_PATH):

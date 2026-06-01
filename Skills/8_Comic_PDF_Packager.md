@@ -38,8 +38,8 @@ import re
 import sys
 from PIL import Image
 
-# 載入環境設定檔 config.json
-CONFIG_FILE = "/Users/shane/ai-comic-generator-skills/config.json"
+# 載入環境設定檔 config.json（自動定位於目前腳本所在目錄的上一層）
+CONFIG_FILE = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config.json"))
 if not os.path.exists(CONFIG_FILE):
     print("❌ 錯誤：找不到環境設定檔，請先執行初始化設定！")
     sys.exit(1)
